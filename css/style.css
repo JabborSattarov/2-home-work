@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    background: chocolate;
+    padding: 0px 50px;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__title{
+    text-decoration: none;
+    color: yellow;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:10px;
+}
+.header__ul{
+    display: flex;
+    align-items: center;
+}
+.ul__li{
+    list-style: none;
+    display: flex;
+}
+.ul__li__a{
+    margin: 10px 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:yellow;
+}
+.ul__li__a:hover{
+    color: red;
+}
+.main{
+    display: flex;
+}
+.start{
+    width: 30%;
+    background:chocolate;
+    width: 25%;
+    height: 90vh;
+    border-right: 1px solid red;
+    position: relative;
+    padding: 10px;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 40px;
+    padding: 8px 16px;
+    font-weight:600;
+    background: yellow;
+    color: red;
+    border:1px solid red;
+    border-radius: 12px;
+    margin: 20px;
+
+    animation:brath  3s  linear infinite;
+
+}
+@keyframes brath{
+    0%{transform: scale(.9);}
+    25%{transform: scale(1);}
+    50%{transform: scale(.9);}
+    75%{transform: scale(1);}
+    100%{transform: scale(.9);}
+}
+
+
+.say{
+    width: 75%;
+    margin: 0 auto;
+    background: yellow;
+    border-top-right-radius: 12px ;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px ;
+    padding: 10px ;
+    color: red;
+    position: relative;
+
+}
+.say::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 98%;
+    bottom: 0;
+    background: yellow;  
+}
+.say::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    right: 100%;
+    bottom: 0px;
+    background:chocolate;
+    z-index: 999;  
+}
+.menyu{
+    display: none;
+    width: 90%;
+    margin: 10px auto;
+    background:yellow;
+    border-radius: 12px;
+    border: 2px solid red;
+    padding: 10px;
+    animation:menu  1s  linear;
+
+}
+
+@keyframes menu{
+    0%{transform: rotate(10deg);}
+    25%{transform: rotate(-10deg);}
+    75%{transform: rotate(10deg);}
+    100%{transform: rotate(-10deg);}
+}
+
+
+.menyu__title{
+    text-align: center;
+    color: red;
+    font-size:30px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.label{
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+.select{
+    width: 100%;
+    margin: 0 auto;
+    padding:3px 6px;
+    background: yellow;
+    border: 2px solid red;
+    color: red;
+    font-weight: 700;
+    outline: none;
+}
+.board{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/photo-1600891964599-f61ba0e24092.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.opacitiy{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.671);
+    display: flex;
+    position: relative;
+}
+.forEat{
+    opacity: 0;
+    position: absolute;
+    top:22%;
+    left: 25%;
+    width: 400px;
+    height: 400px;
+    background: #FFF;
+    border:2px solid black;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 4px white;
+   
+}
+.opacity2{
+    opacity: 1;
+}
+.display-b{
+    display: block;
+}
+
+.up{
+
+    transform: translateY(-410px);
+}
+
+
+.burger{
+    width:  400px;
+    height:  400px;
+    margin: 0 auto;  
+}
+.hoddog{
+    width: 400px;
+    height:  400px;
+    margin: 0 auto; 
+    object-fit: contain;
+}
+.forDrink{
+    opacity: 0;
+    position: absolute;
+    top: 30px;;
+    right: 30px;
+    width: 230px;
+    height: 230px;
+    background: #FFF;
+    border:2px solid black;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 4px white;
+    
+}
+.secondUp{
+    transform: translateY(-220px);
+}
+
+.cola{
+    width:  220px;
+    height:  220px;
+}
+.pepsi{
+    width:  220px;
+    height:  220px;
+}
+.opacity3{
+    opacity: 1;
+}
